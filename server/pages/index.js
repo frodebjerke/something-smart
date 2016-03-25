@@ -9,7 +9,7 @@ export default function Views() {
       co(getQuotes())
       .then((quotes) => {
         const quote = quotes[0];
-        res.render('index', { quote });
+        res.render('index', { quote: quote, hei: "heiawea" });
       })
       .catch((err) => {
         res.render('error', { err })

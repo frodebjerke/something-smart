@@ -9,7 +9,7 @@ export default function App() {
     app.engine('handlebars', exphbs({defaultLayout: 'main'}));
     app.set('view engine', 'handlebars');
 
-    app.use('/assets', express.static('dist'));
+    app.use('/assets', express.static('assets'));
     app.use('/', pages())
 
     return app;
